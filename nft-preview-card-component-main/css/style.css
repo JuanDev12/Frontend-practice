@@ -1,0 +1,146 @@
+body {
+    background-color:  hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+}
+
+hr {
+    color: hsl(0, 0%, 100%);
+    margin: 8% 5%;
+}
+
+
+h1 {
+    font-size: 18px;
+
+    transition: .4s ease;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+p,span {
+    font-size: 16px;
+}
+
+
+
+/* Card-reviwe section */
+
+.card-review {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 3%;
+    box-shadow: 0px 12px 4px 10px hsl(217, 54%, 11%);
+    /* box-shadow: 0px 0px 30px 20px hsl(217, 54%, 11%); */
+    margin: 15% auto;
+    padding: 1% 0;
+    width: 288px;
+}
+
+.main-image {
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+}
+
+#equilibrium-img {
+    border-radius: 3%;
+    height: 100%;
+    width: 100%;
+
+    transition: .5s ease;
+}
+
+.hover-view {
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 3%;
+    opacity: 0;
+    height: 259px;
+    width: 259px;
+
+    position: absolute;
+    top: 0;
+    transition: .5s ease;
+}
+
+.view-img {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+    z-index: 999;
+    transition: .5s ease;
+}
+
+.main-image:hover .view-img{
+    opacity: 1;
+}
+
+.main-image:hover .hover-view{
+    opacity: .3;
+}
+
+.main-image:hover #equilibrium-img {
+    opacity: .3;
+}
+
+.main-title {
+    color: hsl(0, 0%, 100%);
+    padding-left: 5%;
+}
+
+.main-description {
+    color: hsl(215, 51%, 70%);
+    padding-left: 5%;
+}
+
+.info {
+    padding-left: 5%;
+    float: left;
+    width: 50%;
+}
+
+.ethereum-info {
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.time-info {
+    color: hsl(215, 51%, 70%);
+    padding-bottom: 1%;
+}
+
+.avatar {
+    padding-left: 5%;
+}
+
+#avatar-img {
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+    float: left;
+    margin-right: 5%;
+    width: 10%;
+}
+
+#avatar-info--main {
+    color: hsl(215, 51%, 70%);
+    padding-top: 1%;
+}
+
+#name-avatar {
+    color: hsl(0, 0%, 100%);
+
+    transition: .4s ease;
+}
+
+#name-avatar:hover {
+    color: hsl(178, 100%, 50%);
+}
